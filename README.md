@@ -8,15 +8,15 @@ The website makes use of RESTful API's
 
 ## Step One: Getting started
 
-### Open the project
-
-[Import](https://book.techelevator.com/v2_4/content/guides/intellij.html#import-a-project) the review project into IntelliJ.
-
 ### Database
 
-In the `/database` folder, there's a `campground.sql` SQL script that drops and recreates the tables and data in the `campground` database. You can run that script to create a copy of the database to reference while you work. Be aware, however, that the tests don't use that database. The tests use a temporary database with the same structure. You'll find the SQL for that temporary database in `src/test/resources/test-data.sql`.
+In the `/java` folder, there's a `database` folder where you will find the SQL script to generate the applicaiton database tables along with some test data.
+Before you run the script, you must first create an empty database in PostgreSQL called scrumlords.  Once the database is created, run the database script called `scrumlordsDb.sql` in a new query window.  SQL script will drop any existing tables and data in the `scrumlords` database and re-create it with new intital test data. 
 
-## Step Two: Review starting code and database schema
+## Step Two: Spin-up the Property Management server
+
+
+
 
 ### Starting code
 
