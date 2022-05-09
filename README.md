@@ -19,9 +19,13 @@ Open the vue subdirectory with Visual Studio Code.  Open a terminal window and e
 
 ## Step Four: Using the application
 The website has public pages for viewing available rental properties as well as password protected user-specific content based on a user’s role.  User roles include Landlord, Renter, and Maintenance worker.  Website content is tailored to one of these four roles.  The following user ids can be used to explore the website functionality
+
 Landlord = `Fred Mertz`
+
 Renter = `Tony Stark`
+
 Maintenance worker = `Sam Carpenter`
+
 Passwords for all user ids is set to `password`
 
 
