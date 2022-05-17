@@ -61,18 +61,55 @@
         
         </b-navbar>
     </nav>
+    
     <main>
         <router-view />
+        
     </main>
-
+     
     <footer>
-        <div class="content">
-            <b> P R I M E Property Management </b>
+      
+        <div class="footer-text">
+         <hr style="height:3px;border-width:0;color:black;background-color:black;margin-top: 0rem;
+            margin-right: 0px; margin-bottom: .5rem;margin-left: 0px;">
+            
+            <b> P R I M E Property Management </b><br>
+            <div>
+                <router-link v-bind:to="{ name: 'home' }">
+                    Home
+                </router-link>
+                <p><b>privacy | security</b></p>
+                <p>&copy;{{ currentYear }} Powered by KevinMcGoldrick.com</p>
+                <br><br><br><br><br>
+            </div>
         </div>
+
     </footer>
 
     </div>
 </template>
+
+<script>
+export default {
+name: "CurrentDate",
+data: () => ({
+  currentYear: "",
+}),
+
+props: {
+  msg: String,
+},
+methods: {
+  getCurrentYear: function () {
+    return new Date().getFullYear();
+  },
+},
+mounted: function () {
+  this.currentYear = this.getCurrentYear();
+},
+};
+</script>
+
 
 <style>
 
@@ -101,7 +138,7 @@ header {
 nav {
     grid-area: nav;
     margin-left: 0.5rem;
-    background-color: #f2ead2;
+   
 }
 
 main {
@@ -115,15 +152,17 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #CFE34E;
+}
+
+.footer-text{
+     font-size: 12px;
 }
 
 aside {
     grid-area: side;
     margin-right: 0.5rem;
-    background-color: #f2ead2;
+   
 }
-
 
 #mainContent {
     background-color:#FFFFFF;
@@ -133,6 +172,7 @@ aside {
     
 
 }
+
 #navBarCss {
     background-color: #4183C3;
 display: flex;
@@ -142,13 +182,13 @@ border-radius: 10px;
     
 }
 
-
 #app {
     background-color:#FFFFFF;
     padding: 1.5rem;
     font-family: 'Arial', serif;
     min-height: 100vh;
 }
+
 .navBarContainer {
 align-items: center;
 justify-items: right;
@@ -161,13 +201,17 @@ box-shadow: 0px 3px 15px;
     margin-top:10px;
     margin-bottom:10px;
     text-emphasis-color: darkblue;
-
 }
 
 #OverallPageTitleOutsideOfTitles {
   font-size: 30px;
 }
 
-
+.shadow-box {
+  background-color: #edfced;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+    }
 
 </style>

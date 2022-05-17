@@ -8,12 +8,7 @@
         <center>Create an Account</center>
     </h1>
     <div id="this-contains-the-entire-page-and-all-contents" class="tile is-ancestor">
-        <div id="this-contains-all-tiles" class="tile is-12">
-            <div id="this-contains-all-tiles-and-makes-tiles-stack-vertically" class="tile is-parent is-vertical">
-                <div id="this-is-a-single-tile" class="tile is-child box">
-
-
-                  
+     <div class="shadow-box">     
     <form class="form-register" @submit.prevent="register">
       <h1 class="h3 mb-3 font-weight-normal">Please complete the following:</h1>
       <div class="alert alert-danger" role="alert" v-if="registrationErrors">
@@ -85,14 +80,8 @@
       <router-link :to="{ name: 'login' }">Already have an account?</router-link>
       </center>
     </form>
+</div>
 
-
-     
-
-            </div>
-        </div>
-    </div>
-    
 </div>
 </div>
 

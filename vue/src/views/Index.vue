@@ -5,17 +5,21 @@
     <div class="columns">
 
       <div class="column is-two-thirds">
-        Welcome! P R I M E Property Managment, LLC is a service-oriented property 
+        <p> Welcome! P R I M E Property Managment, LLC is a service-oriented property 
         management company. We strive to take the stress out of owning an investment 
-        property while simultaneously providing a positive living environment for our tenants. 
-        While we are located in Tampa, P R I M E Property Management provides service 
-        to Tampa and the surrounding communities.
-        Along with residential property management, we have experienced staff that 
-        specialize in all forms of commercial property management.When it comes to your 
-        management needs, don't you deserve the "P R I M E" level?
+        property while simultaneously providing a positive living environment for our tenants. </p>
+
+        <p> While we are located in Tampa, P R I M E Property Management provides service 
+        to Tampa and the surrounding communities.</p>
+
+        <p> Along with residential property management, we have experienced staff that 
+        specialize in all forms of commercial property management. </p>
+
+        <p> When it comes to your management needs, don't you deserve the "P R I M E" level? </p>
+
       </div>
 
-      <div id="login" class="column">
+      <div id="login" class="shadow-box">
         <h3>Resident Sign In </h3>
           <b-field label="Name">
                 <b-input v-model="name"></b-input>
@@ -56,11 +60,9 @@
     
    
        
-            <div id="this-contains-all-tiles-and-makes-tiles-stack-vertically" class="tile is-parent is-vertical">
-                <div id="this-is-a-single-tile" class="tile is-3 is-child box">
-                    <div id="this-makes-all-content-within-the-tile-stack-vertically" class="tile is-vertical"> 
+           <div class="shadow-box">
                       <form class="form-signin" @submit.prevent="login">
-                      <center><h1 class="h3 mb-3 font-weight-normal"><b>Welcome to ScrumLords!</b></h1></center>
+                      <center><h1 class="h3 mb-3 font-weight-normal"><b>Resident Sign In</b></h1></center>
                       <div
                         class="alert alert-danger"
                         role="alert"
@@ -71,12 +73,12 @@
                             role="alert"
                             v-if="this.$route.query.registration"
                             >Thank you for registering, please sign in.</div>
-                            <label for="username" class="sr-only">Username</label>
+                            <label for="username" class="sr-only">Email</label>
                             <input
                               type="text"
                               id="username"
                               class="form-control"
-                              placeholder="Username"
+                              placeholder="Email"
                               v-model="user.username"
                               required
                               autofocus
@@ -97,10 +99,8 @@
 
                         
                       </div>
-                    </div>
-                  </div>
-                </div>
-              
+                   
+              </div>
            
 
             <aside>
@@ -148,6 +148,13 @@ export default {
 </script>
 
 <style scoped>
+p{
+  margin: 1em 0;
+  margin-top: 1em;
+  margin-right: 0px;
+  margin-bottom: 1em;
+  margin-left: 0px;
+}
 
 .form-signin {
   text-align: center;
@@ -167,7 +174,7 @@ export default {
 
 main {
     grid-area: content;
-    background-color: #f9f5f0;
+    
 }
 
 aside {
