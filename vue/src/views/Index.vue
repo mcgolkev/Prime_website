@@ -19,55 +19,24 @@
 
       </div>
 
-      <div id="login" class="shadow-box">
-        <h3>Resident Sign In </h3>
-          <b-field label="Name">
-                <b-input v-model="name"></b-input>
-            </b-field>
 
-            <b-field label="Email"
-                type="is-danger"
-                message="This email is invalid">
-                <b-input type="email"
-                    value="john@"
-                    maxlength="30">
-                </b-input>
-            </b-field>
-
-            <b-field label="Username"
-                type="is-success"
-                message="This username is available">
-                <b-input value="johnsilver" maxlength="30"></b-input>
-            </b-field>
-
-            <b-field label="Password">
-                <b-input type="password"
-                    value="iwantmytreasure"
-                    password-reveal>
-                </b-input>
-            </b-field>
-      </div>
     </div>
   </div>    
 
 
 
   <div id="all">
-    
-    <h1 id="OverallPageTitleOutsideOfTitles"><br>
-        <center>Please Sign In</center>
-    </h1>
-    
+      
    
        
            <div class="shadow-box">
-                      <form class="form-signin" @submit.prevent="login">
-                      <center><h1 class="h3 mb-3 font-weight-normal"><b>Resident Sign In</b></h1></center>
+                      <form  @submit.prevent="login">
+                      <center>Resident Sign In</center>
                       <div
-                        class="alert alert-danger"
+                        class="alert-danger"
                         role="alert"
                         v-if="invalidCredentials"
-                          >Invalid username and password!</div>
+                          >The email address and password entered do not match any in our system. Please try again.</div><br>
                           <div
                             class="alert alert-success"
                             role="alert"

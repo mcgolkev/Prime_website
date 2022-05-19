@@ -208,10 +208,27 @@ box-shadow: 0px 3px 15px;
 }
 
 .shadow-box {
-  background-color: #edfced;
-  width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+    display: flex;
+    background-color: #edfced;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
     }
+.alert-danger{
+    color: #c80813;
+    font-size: 11px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.form-control {
+    
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+	height: 34px;
+	padding: 7px 7px 7px 7px;
+	width: 85%;
+}
+
 
 </style>
