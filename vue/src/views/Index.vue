@@ -1,10 +1,10 @@
 <template>
-<main>
+<main class="container">
   
-  <div class="container">
-    <div class="columns">
+  <mainContent>
+    
 
-      <div class="column is-two-thirds">
+      
         <p> Welcome! P R I M E Property Managment, LLC is a service-oriented property 
         management company. We strive to take the stress out of owning an investment 
         property while simultaneously providing a positive living environment for our tenants. </p>
@@ -17,7 +17,10 @@
 
         <p> When it comes to your management needs, don't you deserve the "P R I M E" level? </p>
 
-      </div>
+  </mainContent>    
+         
+
+    <sideBar>
         <div class="shadow-box">
                       <form  @submit.prevent="login">
                       <center>Resident Sign In</center>
@@ -53,29 +56,9 @@
                             <center><button type="submit">Sign in</button></center><br>
                             <router-link :to="{ name: 'register' }">Need an account?</router-link>
                         </form>
-
-
-                        
                       </div>
-
-    </div>
-  </div>    
-
-
-
-  <div id="all">
-      
-   
-       
-           
-                   
-              </div>
-           
-
-            <aside>
-        
-    </aside>
-            </main>
+    </sideBar>
+</main>
 </template>
 
 <script>
@@ -117,6 +100,21 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "mainContent" "mainContent" "sideBar";
+
+    grid-template-columns: 75% 25%;
+    
+    gap: 5px;
+
+    height: 100vh;
+    background-color:#FFFFFF;
+}
+
+
 p{
   margin: 1em 0;
   margin-top: 1em;
@@ -125,32 +123,5 @@ p{
   margin-left: 0px;
 }
 
-.form-signin {
-  text-align: center;
-}
-
-#this-contains-all-tiles-and-makes-tiles-stack-vertically {
-  display: flexbox;
-  align-items: center;
-}
-
-#login {
-  background-color: #999999;
-}
 </style>
 
-<style>
-
-main {
-    grid-area: content;
-    
-}
-
-aside {
-    grid-area: side;
-    margin-right: 0.5rem;
-    background-color: #f2ead2;
-}
-
-
-</style>
