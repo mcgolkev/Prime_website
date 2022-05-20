@@ -9,6 +9,7 @@ import Properties from '../views/Properties.vue'
 import PropertyInfo from '../views/PropertyInfo.vue'
 import AddProperty from '../views/AddProperty.vue'
 import Maintenance from '../views/Maintenance.vue'
+//import Index from '../views/Index.vue'
 // import Renter from '../components/Renter'
 // import NotificationList from '../components/NotificationList'
 
