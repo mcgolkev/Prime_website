@@ -57,6 +57,9 @@
                             <router-link :to="{ name: 'register' }">Need an account?</router-link>
                         </form>
                       </div>
+
+
+                      
     </sideBar>
 </main>
 </template>
