@@ -18,18 +18,7 @@
         <p> When it comes to your management needs, don't you deserve the "P R I M E" level? </p>
 
       </div>
-
-
-    </div>
-  </div>    
-
-
-
-  <div id="all">
-      
-   
-       
-           <div class="shadow-box">
+        <div class="shadow-box">
                       <form  @submit.prevent="login">
                       <center>Resident Sign In</center>
                       <div
@@ -68,6 +57,17 @@
 
                         
                       </div>
+
+    </div>
+  </div>    
+
+
+
+  <div id="all">
+      
+   
+       
+           
                    
               </div>
            
