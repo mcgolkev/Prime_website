@@ -1,5 +1,6 @@
 <template>
-<div class="container">
+
+<div class="flex-container">
   
   <mainContent>
        <p> Welcome! P R I M E Property Managment, LLC is a service-oriented property 
@@ -15,11 +16,13 @@
         <p> When it comes to your management needs, don't you deserve the "P R I M E" level? </p>
   </mainContent>    
 
+
     <sideBar>
        <signin />
     </sideBar>
 
 </div>
+
 </template>
 
 <script>
@@ -31,18 +34,14 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    display: grid;
+.flex-container{
+  display: flex;
+  
+}
 
-    grid-template-areas:
-        "mainContent" "sideBar";
-
-    grid-template-columns: 75% 25%;
-    
-    gap: 5px;
-
-    height: 100vh;
-    background-color:#FFFFFF;
+.flex-sidebar{
+  display: flex;
+  
 }
 
 p{

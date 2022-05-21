@@ -122,7 +122,7 @@ mounted: function () {
         "content"
         "footer";
 
-    grid-template-columns: 1fr;
+    
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 2px;
 
