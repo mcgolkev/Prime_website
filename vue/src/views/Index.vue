@@ -19,6 +19,7 @@
 
     <sideBar>
        <signin />
+
     </sideBar>
 
 </div>

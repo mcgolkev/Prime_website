@@ -1,6 +1,6 @@
 <template>
-<div class="container">
-      <sideBar>
+
+     
         <div class="shadow-box">
                       <form  @submit.prevent="login">
                       <center>Resident Sign In</center>
@@ -37,8 +37,8 @@
                             <router-link :to="{ name: 'register' }">Need an account?</router-link>
                         </form>
                       </div>        
-    </sideBar>
-</div>
+  
+
 </template>
 
 <script>
