@@ -19,9 +19,12 @@
 
     <sideBar>
        <signin />
-
+       
+                    
+                      <center><h3 class="title--small title--border-bottom"> <b>Rental Application</b></h3></center>
+                      
+                             
     </sideBar>
-
 </div>
 
 </template>
@@ -37,14 +40,22 @@ export default {
 <style scoped>
 .flex-container{
   display: flex;
-  
 }
 
 .flex-sidebar{
   display: flex;
-  
 }
-
+.title--small{
+  font-size: 16px;
+}
+.title--border-bottom {
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 4px;
+  width: 90%;
+  margin-top: 8px;
+  text-align: left;
+ 
+}
 p{
   margin: 1em 0;
   margin-top: 1em;

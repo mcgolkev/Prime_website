@@ -3,7 +3,7 @@
      
         <div class="shadow-box">
                       <form  @submit.prevent="login">
-                      <center>Resident Sign In</center>
+                      <center><h3 class="title--small title--border-bottom"> <b>Sign In</b></h3></center>
                       <div
                         class="alert-danger"
                         role="alert"
@@ -87,6 +87,24 @@ p{
   margin-right: 0px;
   margin-bottom: 1em;
   margin-left: 0px;
+}
+.title--small{
+  font-size: 16px;
+  text-align: left;
+}
+.title--border-bottom {
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 4px;
+  width: 90%;
+  margin-top: 8px;
+ 
+}
+
+.form__label {
+	display: block;
+	font-weight: 700;
+	font-size: 12px;
+	margin: 6px 0 4px;
 }
 
 </style>
