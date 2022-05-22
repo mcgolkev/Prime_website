@@ -18,12 +18,8 @@
 
 
     <sideBar>
-       <signin />
-       
-                    
-                      <center><h3 class="title--small title--border-bottom"> <b>Rental Application</b></h3></center>
-                      
-                             
+      <signin /><br>
+      <rentalApp />        
     </sideBar>
 </div>
 
@@ -31,9 +27,10 @@
 
 <script>
 import Signin from '../components/Signin.vue'
+import RentalApp from '../components/RentalApp.vue'
 export default {
   name: "index",
-  components:  {Signin}
+  components:  {Signin, RentalApp},
 }
 </script>
 

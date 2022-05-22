@@ -78,6 +78,7 @@
                 <router-link v-bind:to="{ name: 'home' }">
                     Home
                 </router-link>
+                <br><br>
                 <p><b>privacy | security</b></p>
                 <p>&copy;{{ currentYear }} Powered by KevinMcGoldrick.com</p>
                 <br><br><br><br><br>
@@ -156,6 +157,7 @@ footer {
 
 .footer-text{
      font-size: 12px;
+     margin-left: 20px;
 }
 
 aside {
@@ -212,10 +214,11 @@ box-shadow: 0px 3px 15px;
     background-color: #edfced;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
     margin: 15px 5px 5px 5px;
     }
+    
 .alert-danger{
     color: #c80813;
     font-size: 11px;

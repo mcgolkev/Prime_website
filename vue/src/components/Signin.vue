@@ -23,7 +23,7 @@
                               v-model="user.username"
                               required
                               autofocus
-                            /><br><br>
+                            /><br>
                             <label for="password" class="sr-only">Password</label>
                             <input
                               type="password"
@@ -106,6 +106,14 @@ p{
 	font-size: 12px;
 	margin: 6px 0 4px;
 }
-
+.sr-only{
+  margin-left: 10px;
+}
+.form-control{
+  margin-left: 10px;
+}
+input:placeholder-shown {
+   font-style: italic;
+}
 </style>
 
