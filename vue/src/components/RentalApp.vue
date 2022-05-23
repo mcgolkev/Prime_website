@@ -3,10 +3,10 @@
      
         <div class="shadow-box">
                <center><h3 class="title--small title--border-bottom"> <b>Rental Application</b></h3></center>
-                    <br>
-                      <p>Interested in one of our properties?</p>
-                    
-                       <router-link :to="{ name: 'register' }">Apply Online</router-link>        
+                 
+                <p>Interested in one of our properties?</p>
+                 
+                       <router-link style="margin-left: 10px;" :to="{ name: 'register' }">Apply Online</router-link>        
         </div>        
   
 
@@ -19,12 +19,11 @@
 <style scoped>
 
 p{
-  margin: 1em 0;
-  margin-top: 1em;
+    font-size: 100%;
   margin-right: 0px;
-  margin-bottom: 1em;
-  margin-left: 0px;
+  margin-left: 10px;
 }
+
 .title--small{
   font-size: 16px;
   text-align: left;
@@ -36,6 +35,18 @@ p{
   margin-top: 8px;
  
 }
+
+.shadow-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #edfced;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    border-radius: 5px;
+    margin: 15px 5px 5px 5px;
+    }
+    
 
 </style>
 

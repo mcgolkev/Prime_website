@@ -81,13 +81,6 @@ export default {
 
 <style scoped>
 
-p{
-  margin: 1em 0;
-  margin-top: 1em;
-  margin-right: 0px;
-  margin-bottom: 1em;
-  margin-left: 0px;
-}
 .title--small{
   font-size: 16px;
   text-align: left;
